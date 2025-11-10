@@ -5,6 +5,9 @@ import path from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  // Use repository path as base for GitHub Pages project site
+  // https://vitejs.dev/guide/static-deploy.html#github-pages
+  base: '/hrms/',
   server: {
     allowedHosts: true
   },
@@ -21,4 +24,4 @@ export default defineConfig({
       },
     },
   },
-}) 
+})
